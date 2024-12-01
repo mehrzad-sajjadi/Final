@@ -1,5 +1,5 @@
 <template>
-    <div class="w-[70%] p-4 bg-gray-100 rounded-lg shadow-md">
+    <div class="w-[70%] p-4 bg-gray-100 dark:bg-gray-950 rounded-lg shadow-md">
         <table
             class="min-w-full hover:bg-[#f0f4f8] bg-white border border-gray-300 rounded-lg overflow-hidden"
         >
@@ -23,7 +23,7 @@
                 <tr
                     v-for="(array, index) in arrays"
                     :key="index"
-                    class="hover:bg-gray-100 transition-all duration-300 ease-in-out h-8 px-4 m-2"
+                    class="hover:bg-gray-100 transition-all duration-300 ease-in-out h-8 px-4 m-2 dark:bg-gray-900"
                 >
                     <td
                         v-for="(item, index) in array"
