@@ -14,7 +14,6 @@
                         class="h-8 px-4 flex items-center cursor-pointer m-2 text-sm text-indigo-100 transition-colors duration-150 bg-blue-500 hover:bg-blue-950 rounded-lg focus:shadow-outline"
                         type="button"
                         as="button"
-                        :preserve-state="false"
                     >
                         Profile
                     </Link>
@@ -154,8 +153,7 @@ function runModal() {
 
 const menu = ref(usePage().props.menu);
 
-const useStorage = useLocalStorage("SideBarValue", true);
-
+const useStorage = useLocalStorage("showSidebar", true);
 import {
     MoonIcon,
     SunIcon,

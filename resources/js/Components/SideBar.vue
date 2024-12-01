@@ -8,6 +8,10 @@
             <Link
                 :href="route('dashboard')"
                 :active="route().current('dashboard')"
+                :class="{
+                    'text-blue-500 font-bold': route().current('dashboard'),
+                    'text-gray-500': !route().current('dashboard'),
+                }"
             >
                 Dashboard
             </Link>
@@ -17,7 +21,13 @@
             v-for="(item, index) in menu"
             :key="index"
         >
-            <Link :href="route(item.route)" :active="item.active">
+            <Link
+                :href="route(item.route)"
+                :active="item.active"
+                :class="{
+                    'text-blue-500 font-bold': item.active,
+                }"
+            >
                 {{ item.name }}
             </Link>
         </div>
@@ -32,5 +42,3 @@ const props = defineProps({
     menu: Object,
 });
 </script>
-
-<style></style>

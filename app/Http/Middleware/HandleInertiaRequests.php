@@ -41,16 +41,7 @@ class HandleInertiaRequests extends Middleware
                     'route'=>'category.index' ,
                     "active"=>Route::is("category.index") || Route::is("category.create") ||  Route::is("category.edit")
                 ],
-                [
-                    'name'=>'Posts',
-                    'route'=>'post.index' ,
-                    "active"=>Route::is("post.index") || Route::is("post.create") ||  Route::is("post.edit")
-                ],
-                [
-                    'name'=>'List',
-                    'route'=>'post.index' ,
-                    "active"=>Route::is("post.index") 
-                ],
+                
                 
             ],
 
